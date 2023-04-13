@@ -28,7 +28,9 @@ const Navbar = ({ remove, items }) => {
               <li
                 key={index}
                 className={`${
-                  active === item ? "text-black navlink" : "text-GrayishBlue"
+                  active === item
+                    ? "text-black navlink relative"
+                    : "text-GrayishBlue"
                 } cursor-pointer`}
                 onClick={() => setactive(item)}
               >
